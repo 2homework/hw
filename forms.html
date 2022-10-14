@@ -1,0 +1,245 @@
+<html>
+<head>
+ 
+<title>forms</title>
+ 
+ 
+</head>
+ 
+<body>
+
+    <div class="forms">
+
+        <div class="form1">
+            <form>
+            
+                <p>form 1</p>
+                <br>
+            
+                <legend><h1>Анкета студента</h1></legend>
+            
+                <label for="last_name">Ваше имя:</label>
+                <input type="text" id="last_name">
+            
+            
+                <p>Ваш пол</p>
+            
+                <input type="radio" id="m" name="radfem" value="male">
+                <label for="m">Мужской</label>
+                <br>
+                <input type="radio" id="w" name="radfem" value="cute femboy" >
+                <label for="w">Женский</label>
+            
+                <br><br>
+            
+                <label for="last_name">На каом курсе вы учитесь?</label>
+                <select id="kurs">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            
+                <h2>Какие языки программирования вы знаете?</h2>
+            
+                <input type="checkbox" id="pascal" name="pascal">
+                <label for="pascal">Паскаль</label>
+                <br>
+                <input type="checkbox" id="c++" name="c++">
+                <label for="c++">c++</label>
+                <br>
+                <input type="checkbox" id="Java" name="Java">
+                <label for="Java">Java</label>
+                <br>
+                <input type="checkbox" id="c#" name="c#">
+                <label for="c#">c#</label>
+                <br>
+                <input type="checkbox" id="JavaScript" name="JS">
+                <label for="c#">JavaScript</label>
+            
+                <label for="aboutme"><p>Расскажите немного о себе</p></label>
+                <textarea id="aboutme" name="area" placeholder="Не более 200 символов"></textarea>
+                <br>
+                <br>
+                <input type="submit"> <input type="reset">
+        
+        
+            </form>
+        </div>
+        <div class="form2">
+            <form>
+
+                <p>form 2</p>
+
+                <style>
+                    textarea#two {
+                        overflow-y: scroll;
+                        resize: none;
+                        width: 200;
+                        height: 100;
+                    }
+                    #star {
+                        color: red;
+                    }
+                </style>
+
+                <label for="two"><p>Текст сообщения<span id="star">*</span></p></label>
+                <textarea id="two" name="textae" required></textarea>
+
+                <label for="category"><p>Категория обращения</p></label>
+                <select id="category" name="categ">
+                    <option value="one" selected>работа сайта</option>
+                    <option value="two">сайта работа</option>
+                </select>
+
+                <label for="date" ><p>Ожидаемая дата ответа</p></label>
+                <input id="date" name="ansdate" type="date">
+
+                <label for="afmp"><p>Получить ответ по телефону</p></label>
+                <input id="afmp" name="mobileans" type="checkbox">
+
+                <label for="imginp"><p>Изображение (ваше фото)</p></label>
+                <input id="imginp" name="image" type="file">
+
+
+                <label for="text to image"></label>
+                <input id="text to image" name="photo" type="text">
+
+
+
+                <label for="list"><p>Разделы сайта, которые вам понравились</p></label>
+                <select id="list" name="like" multiple>
+                    <option value="one">Каталог</option>
+                    <option value="two">Поддержка</option>
+                    <option value="three">Партнеры</option>
+                    <option value="four">Компания</option>
+                </select>
+
+                <label for="m">Вы относите себя к</label>
+
+                <p><input type="radio" id="m" name="radfem" value="1">Конкурент</p>
+                <p><input type="radio" id="m" name="radfem" value="2">Партнер</p>
+                <p><input type="radio" id="m" name="radfem" value="3">Клиент</p>
+
+                <input type="submit">
+
+
+        </form>
+        
+        </div>
+
+        <div class="form3">
+
+            <p>form 3</p>
+
+            <form>
+                <legend><h1>funny form</h1></legend>
+
+                <p>Ваш пол</p>
+            
+                <div>
+
+                    <input type="radio" id="m" name="radfem" value="male">
+                    <label for="m">Мужской</label>
+
+                    <br>
+
+                    <input type="radio" id="w" name="radfem" value="cute femboy">
+                    <label for="w">Женский</label>
+
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="face">Ваше фото</label>
+                    <input id="face" type="file"> 
+                </div>
+
+                <br>
+
+                <div class="auth"> 
+                    <label for="mai">Ваша почта:</label>
+                    <input id="mai" name="email" type="email">
+
+                    <label for="pass">Ваш пароль</label>
+                    <input id="pass" name="password" type="password">
+                </div>
+
+                <br>
+
+                <div class="age">
+                    <label for="age">Ваш возраст:</label>
+                    <input id="age" name="age" type="number">
+                </div>
+
+                <br>
+
+                <div class="num">
+                    <label for="number)">Громкость</label>
+                    <input id="number)" name="volume" type="range" min="0" max="100">
+                </div>
+                
+                <br>
+
+                <div class="serper3">
+
+                    <label for="serper2">Поиск</label>
+                    <input id="serper2" name="serper2" type="search">
+
+                </div>
+
+                <br>
+
+                <div clas="mobile">
+
+                    <label for="tele">Ваш номер телефона</label>
+                    <input id="tele" name="mobile" type="tel">
+
+                </div>
+
+                <br>
+
+                <div class="t">
+
+                    <label for="time">Сколько времени</label>
+                    <input id="time" name="time" type="time">
+
+                </div>
+
+                <br>
+
+                <div class="vkontakte">
+
+                    <label for="vk">Ваш аккаунт в вконтакте</label>
+                    <input id="vk" name="vk" type="url">
+
+                </div>
+
+                <br>
+
+                <div class="mmm">
+
+                    <label for="mm">Какой сейчас месяц</label>
+                    <input id="mm" name="mm" type="month">
+
+                </div>
+
+                <br>
+
+                <div class="zachem">
+
+                    <label for="week">Неделя?</label>
+                    <input id="week" name="week" type="week">
+
+                </div>
+
+                <p><input type="image" src="./funny button/button.gif" width="200" height="100"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+ 
+</html>
